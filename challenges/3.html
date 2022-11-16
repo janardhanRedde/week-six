@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>length converter function</title>
+</head>
+<h2>Kilometer to Miles Converter :  </h2>
+<script>
+function addNumbers(){
+    
+        var kms = document.getElementById("number").value;
+        const factor = 0.621371;
+        var miles = kms * factor;
+        document.getElementById("res").innerText = miles + ' miles'; }
+
+</script>
+<body>
+    Enter kilometer : <input id="number" />
+      <button onclick="addNumbers()">Click here to get miles</button> 
+    <h1 id="res"></h1>
+</body>
+</html>
